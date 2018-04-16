@@ -1,0 +1,445 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FD1344FB-FC34-471A-8348-0B0FEE57E0FD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Match_Maker_2</RootNamespace>
+    <AssemblyName>Match Maker 2</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddMatchUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddMatchUp.Designer.cs">
+      <DependentUpon>AddMatchUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddTeam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddTeam.Designer.cs">
+      <DependentUpon>AddTeam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConfirmNewSeason.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfirmNewSeason.Designer.cs">
+      <DependentUpon>ConfirmNewSeason.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConfirmUndo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfirmUndo.Designer.cs">
+      <DependentUpon>ConfirmUndo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateNewLeague.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateNewLeague.Designer.cs">
+      <DependentUpon>CreateNewLeague.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditTeam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditTeam.Designer.cs">
+      <DependentUpon>EditTeam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ErrorForm.Designer.cs">
+      <DependentUpon>ErrorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorPreviousForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ErrorPreviousForm.Designer.cs">
+      <DependentUpon>ErrorPreviousForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorUndoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ErrorUndoForm.Designer.cs">
+      <DependentUpon>ErrorUndoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GiveBye.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GiveBye.Designer.cs">
+      <DependentUpon>GiveBye.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoadTeamData.cs" />
+    <Compile Include="MainMatchMake.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMatchMake.Designer.cs">
+      <DependentUpon>MainMatchMake.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MatchUp.cs" />
+    <Compile Include="MatchUpFinal.cs" />
+    <Compile Include="PreviousMatchUpsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PreviousMatchUpsForm.Designer.cs">
+      <DependentUpon>PreviousMatchUpsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReadGameTimesFile.cs" />
+    <Compile Include="RemoveBye.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RemoveBye.Designer.cs">
+      <DependentUpon>RemoveBye.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RemoveLeague.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RemoveLeague.Designer.cs">
+      <DependentUpon>RemoveLeague.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RemoveMatchUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RemoveMatchUp.Designer.cs">
+      <DependentUpon>RemoveMatchUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RemoveTeam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RemoveTeam.Designer.cs">
+      <DependentUpon>RemoveTeam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RenameLeague.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RenameLeague.Designer.cs">
+      <DependentUpon>RenameLeague.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RenameLeague2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RenameLeague2.Designer.cs">
+      <DependentUpon>RenameLeague2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RenameTeam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RenameTeam.Designer.cs">
+      <DependentUpon>RenameTeam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RenameTeam2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RenameTeam2.Designer.cs">
+      <DependentUpon>RenameTeam2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SaveLeagueList.cs" />
+    <Compile Include="SelectLeague.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectLeague.Designer.cs">
+      <DependentUpon>SelectLeague.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.cs" />
+    <Compile Include="SettingsError.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SettingsError.Designer.cs">
+      <DependentUpon>SettingsError.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SettingsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SettingsForm.Designer.cs">
+      <DependentUpon>SettingsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShowMatchesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowMatchesForm.Designer.cs">
+      <DependentUpon>ShowMatchesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StatisticsPA.cs" />
+    <Compile Include="StatisticsPAForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StatisticsPAForm.Designer.cs">
+      <DependentUpon>StatisticsPAForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StatisticsTPForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StatisticsTPForm.Designer.cs">
+      <DependentUpon>StatisticsTPForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Team.cs" />
+    <Compile Include="WriteBackData.cs" />
+    <Compile Include="WriteSettingsData.cs" />
+    <EmbeddedResource Include="AddMatchUp.resx">
+      <DependentUpon>AddMatchUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddTeam.resx">
+      <DependentUpon>AddTeam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfirmNewSeason.resx">
+      <DependentUpon>ConfirmNewSeason.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfirmUndo.resx">
+      <DependentUpon>ConfirmUndo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateNewLeague.resx">
+      <DependentUpon>CreateNewLeague.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditTeam.resx">
+      <DependentUpon>EditTeam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ErrorForm.resx">
+      <DependentUpon>ErrorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ErrorPreviousForm.resx">
+      <DependentUpon>ErrorPreviousForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ErrorUndoForm.resx">
+      <DependentUpon>ErrorUndoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GiveBye.resx">
+      <DependentUpon>GiveBye.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMatchMake.resx">
+      <DependentUpon>MainMatchMake.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PreviousMatchUpsForm.resx">
+      <DependentUpon>PreviousMatchUpsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RemoveBye.resx">
+      <DependentUpon>RemoveBye.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RemoveLeague.resx">
+      <DependentUpon>RemoveLeague.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RemoveMatchUp.resx">
+      <DependentUpon>RemoveMatchUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RemoveTeam.resx">
+      <DependentUpon>RemoveTeam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RenameLeague.resx">
+      <DependentUpon>RenameLeague.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RenameLeague2.resx">
+      <DependentUpon>RenameLeague2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RenameTeam.resx">
+      <DependentUpon>RenameTeam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RenameTeam2.resx">
+      <DependentUpon>RenameTeam2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectLeague.resx">
+      <DependentUpon>SelectLeague.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SettingsError.resx">
+      <DependentUpon>SettingsError.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SettingsForm.resx">
+      <DependentUpon>SettingsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowMatchesForm.resx">
+      <DependentUpon>ShowMatchesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StatisticsPAForm.resx">
+      <DependentUpon>StatisticsPAForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StatisticsTPForm.resx">
+      <DependentUpon>StatisticsTPForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\DataSources\Program.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cricket1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cricket2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\netball1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\netball2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\soccer1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\soccer2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddMatchup1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddMatchup2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddTeam1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddTeam2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Done1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Done2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EditTeam1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EditTeam2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GiveBye1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GiveBye2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MakeMatches1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MakeMatches2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NewSeason1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NewSeason2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RemoveBye1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RemoveBye2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RemoveMatchUp1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RemoveMatchUp2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RemoveTeam1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RemoveTeam2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RenameTeam1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RenameTeam2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Settings1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Settings2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Statistics1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Statistics2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UndoMatchUps1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UndoMatchUps2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ViewPreviousMatches1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ViewPreviousMatches2.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
