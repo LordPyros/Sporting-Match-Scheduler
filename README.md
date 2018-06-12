@@ -1,13 +1,17 @@
 # Sporting-Match-Scheduler
-
-This was my first attempt at making a real world appllication. It was intended to assist and save time for an Indoor Sports 
-  center in which I am a member of.
+  I was very new to coding when I created this app, to be honest the code is pretty terrible. I uploaded this project to display my problem solving ability and what I was able to achieve with very little knowlege of c#. My coding skills have come a very long way since then. Below is a list of many things that I would do differently if I were to make this application again.
 
 
-It allows the user to create a weekly schedule for matches and manage teams accross several sports.  
+  This was my first attempt at making a real world application. It was intended to assist and save time for an Indoor Sports 
+center in which I am a member of. It allows the user to create a weekly schedule for matches and manage teams accross several indoor sports.  
   
+
+GETTING STARTED
   
-Features
+  Once you have selected a sport and created a new league, I recommend setting up game times first.  Doing this may save time as you won't need to revisit options to setup the rest of the competition.
+
+
+FEATURES
 
 Teams will play other teams an even amount of times (round robin).
 
@@ -34,8 +38,8 @@ Add / remove / rename leagues.
 Add / remove / rename teams at any time throught a season without causing an issue.
 
 
-I was very new to coding when I created this app, my understanding was quite lacking at the time.
-These are some of the things I would correct or do differently if I were to build this app again.
+
+THINGS I WOULD DO DIFFERENTLY IF I WERE TO MAKE THIS APPLICATION AGAIN.
 
 The program has many global varibales as I had not got my head around passing varibles to methods.
 
@@ -69,6 +73,8 @@ The LSOP (last seasons overall position) feature needs implementing to shuffle t
 Due to many reasons (eg number of teams, teams availabilty, byes, etc) it is impossible to make sure every team plays every 
   other team before they play a team twice. Work needs to be done to make sure teams have played everyone before they have 
   played too many teams twice.
+  
+
 
 
 
