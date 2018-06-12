@@ -43,7 +43,7 @@ THINGS I WOULD DO DIFFERENTLY IF I WERE TO MAKE THIS APPLICATION AGAIN.
 
 The program has many global varibales as I had not got my head around passing varibles to methods.
 
-Ints are used in many placed where I should have used bools.
+Ints are used in many places where I should have used booleans.
 
 I used lots of .CSV files for storage instead of using an sql database.
 
